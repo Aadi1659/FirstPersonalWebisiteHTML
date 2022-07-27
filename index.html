@@ -1,0 +1,145 @@
+<!--Doctype refers to the document type which in this case is html
+meta gives the browser the info regarding the website like the character encoding, the description etc.
+
+Fun-fact -- in UTF-8 we can also use emoticons. simply copy paste it from the official UTF-8 site and paste it.
+
+In this personal website, we are trying to make a simple HTML website similar to Jon Kleinberg's website
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Sharma's Personal Website</title>
+  </head>
+  <body>
+    <table cellspacing = 20> <!-- cell spacing is an attribute that uses pixel value -->
+      <tr>
+        <td>
+          <!-- img src can be a web photo or a local picture, also alt means what to display when the picture is not available -->
+          <img src="source.png" alt="Photo of Aaditya Dev Sharma" />
+        </td>
+        <td>
+          <h1>Aaditya Dev Sharma</h1>
+          <!-- p refers to the paragraph tag -->
+          <!-- i refers to italic that is makes our text italic, which is same as em tag, but the difference is that i tag just styles the text, but the em tags tells the browser to stress that particular text, thereby italicising it...
+    It is always recommended too use em instead of i 
+    same goes with bold and strog tag, use strong instead of bold-->
+          <!-- a tag refers to hypertext tag used for hyperlinks href will tell us the address and the space between the <a> and </a> will go the hyperlink text -->
+          <p>
+            <em
+              >2nd year CSE Student at
+              <strong
+                ><a href="https://pes.edu/">PES University Bangalore</a></strong
+              ></em
+            >
+          </p>
+
+          <p>
+            I am a second year student at PES University Bangalore and I am
+            currently pursuing CSE. I am originally from Kolkata and have been
+            living there for the past 10 years. I have completed my schooling
+            from there itself and have passed with flying colors. I have a keen
+            interest in web and application development.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <hr size="3" noshade />
+
+    <h3>Education</h3>
+    <!-- Lists in HTML are of two types, ordered and unordered.
+Ordered are denoted by ol and have numbers while unordered ie ul have bullet points. The list members are denoted by li -->
+    <ul>
+      <li>
+        Secured 96 percent in <a href="https://www.cisce.org/">ICSE</a> Class
+        10th Board Examinations
+      </li>
+      <li>
+        Secured 93 percent in <a href="https://www.cbse.gov.in/">CBSE</a> Class
+        12th Board Examinations
+      </li>
+    </ul>
+
+    <hr size="3" noshade />
+
+    <!-- table in HTML are denoted by the <table> tag, the cells are denoted by the td tag and the table head cell is denoted by the th tag which is basically the heading of the column, there is also something called as the table foot. -->
+
+    <h3>Institutions studied in</h3>
+
+    <table border="1">
+      <thead>
+        <th>School/Institute</th>
+        <th>Year</th>
+        <th>Passing percentage</th>
+      </thead>
+      <tr>
+        <td>Garden High School</td>
+        <td>2009-2019</td>
+        <td>96%</td>
+      </tr>
+      <tr>
+        <td>Delhi Public School</td>
+        <td>2019-2021</td>
+        <td>93%</td>
+      </tr>
+    </table>
+
+    <hr border="2" noshade>
+
+
+    <h3>Skills</h3>
+
+
+    <table border="1">
+        <tr>
+            <td>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            Photography <br> Flutter
+                        
+                        </td>
+                        <td>
+                            ⭐⭐⭐⭐⭐ <br> ⭐⭐⭐
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+            <td>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            Graphic Designing <br> Data Structures and Algorithms
+                        </td>
+                        <td>
+                            ⭐⭐⭐⭐ <br> ⭐⭐⭐⭐⭐
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+    </table>
+
+    <hr border=2 noshade>
+   
+    
+
+    <!-- creating multiple pages, let us create a new page my hobbies -->
+
+    <p>
+      Click on <strong><a href="hobbies.html">My Hobbies</a></strong> to know
+      about my hobbies
+    </p>
+
+    <p>
+      Want to contact me? Click on
+      <strong><a href="contact.html">this</a></strong> link!
+    </p>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY contact</title>
+  </head>
+  <body>
+    <h1>My Contact Details</h1>
+    <ul>
+      <li>Mobile number: +919903412071</li>
+      <li>Email Id: aadityadev1659@gmail.com</li>
+    </ul>
+
+    <!-- we will be getting forms to get input from user and display it to us 
+for that we use the form tag -->
+
+    <hr border="3" noshade> 
+    <h2>Contact Me!</h2>
+    
+
+    <form action="mailto:aadityadev1659@gmail.com", method="post", enctype="text/plain">
+      <table cellspacing="5">
+        <tr>
+          <td>
+            <label>Your Name:</label>
+            
+          </td>
+          <td>
+            <input type="text" name="yourName" />
+            
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Your Email Id: </label>
+            
+          </td>
+          <td>
+            <input type="email" name="yourEmail" id="" />
+            
+          </td>
+        </tr>
+      </table>
+
+      <textarea name="yourMessage" cols="30" rows="10">
+
+      </textarea>
+      <br>
+
+      <input type="submit">
+
+      <br /><br />
+    </form>
+  </body>
+</html>
