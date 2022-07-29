@@ -1,0 +1,66 @@
+
+
+/* TAG SELECTORS */
+body{
+    background-color: #F9F9F9;
+  }
+hr{
+
+/* now this wont change the bg of the hr, as some default values are already given to it
+we can change that by going to default CSS browser setting and checking what to change, this case it is border-style */
+border-style: none;
+border-top-style: dotted;
+border-width: 10px;
+width: 5%;
+background-color: #F9F9F9;
+border-color: #B7D3DF;
+}
+h1{
+    color: #6E85B7;
+    font-family: sans-serif;
+    
+}
+h3{
+   color: #898AA6;
+   font-family: sans-serif;
+
+}
+p{
+    color: #525E75;
+    font-family: sans-serif;
+}
+table{
+    color: #525E75;
+    font-family: sans-serif;
+}
+ul{
+    color: #525E75;
+    font-family: sans-serif;
+}
+ol{
+    color: #525E75;
+    font-family: sans-serif;
+}
+
+
+/* CLASS SELECTORS */
+/* the only difference between a class and a tag selecotor is that there needs to be a full stop before a class selector*/
+/* 
+.mypic{
+    background-color: red;
+} */
+
+/* ID SELECTORS */
+/* Same as classes but need to use a # before use */
+#myh1:hover{
+    color: gold;
+}
+
+/* Diffenrences between ID and Class */
+/* 1.There can be only one ID tag in a particular instance but there can be multiple classes */
+/* 2 Inside a class tag there can be more than one names but you cant do that for an ID */
+/* think of classes as our first name and id as our passport... */
+/* IDs can be used for something that is unique in our page like a navbar, while classes can be used for like 2 or 3 images in a page, we want one big, one small, one rounded etc*/
+
+/* Now there is something called a pseudo-class, which depends on the state of a particular element,
+like the most commonly used is :hover, yes denoted by ":", the usage has been done in the h1 id tag above */
