@@ -13,16 +13,27 @@ In this personal website, we are trying to make a simple HTML website similar to
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Sharma's Personal Website</title>
+
+    <!-- we write the CSS code here so it would be called internal CSS but is applicable to only one page
+    to make it applicable to the other pages as well, we need to write external CSS, with the help of link tag-->
+    <link rel="stylesheet" href="css/styles.css">
+
   </head>
+<!-- here we shall use some inline CSS to get a nice background color notice the changes in the body tag 
+<body style="background-color: #D6EFED;"   -->
+
+<!-- BUT writing and editing CSS codes like this will be very time consuming and error prone -->
+<!-- hence we make changes to the head tag and under style, we write the CSS code: -->
   <body>
     <table cellspacing = 20> <!-- cell spacing is an attribute that uses pixel value -->
       <tr>
         <td>
           <!-- img src can be a web photo or a local picture, also alt means what to display when the picture is not available -->
-          <img src="source.png" alt="Photo of Aaditya Dev Sharma" />
+          <!-- class is used to differentiate between 2 same tags -->
+          <img class="mypic" src="source.png" alt="Photo of Aaditya Dev Sharma" />
         </td>
         <td>
-          <h1>Aaditya Dev Sharma</h1>
+          <h1 id="myh1">Aaditya Dev Sharma</h1>
           <!-- p refers to the paragraph tag -->
           <!-- i refers to italic that is makes our text italic, which is same as em tag, but the difference is that i tag just styles the text, but the em tags tells the browser to stress that particular text, thereby italicising it...
     It is always recommended too use em instead of i 
@@ -48,7 +59,7 @@ In this personal website, we are trying to make a simple HTML website similar to
       </tr>
     </table>
 
-    <hr size="3" noshade />
+    <hr>
 
     <h3>Education</h3>
     <!-- Lists in HTML are of two types, ordered and unordered.
@@ -64,7 +75,7 @@ Ordered are denoted by ol and have numbers while unordered ie ul have bullet poi
       </li>
     </ul>
 
-    <hr size="3" noshade />
+    <hr>
 
     <!-- table in HTML are denoted by the <table> tag, the cells are denoted by the td tag and the table head cell is denoted by the th tag which is basically the heading of the column, there is also something called as the table foot. -->
 
@@ -88,7 +99,7 @@ Ordered are denoted by ol and have numbers while unordered ie ul have bullet poi
       </tr>
     </table>
 
-    <hr border="2" noshade>
+    <hr>
 
 
     <h3>Skills</h3>
@@ -126,7 +137,7 @@ Ordered are denoted by ol and have numbers while unordered ie ul have bullet poi
         
     </table>
 
-    <hr border=2 noshade>
+    <hr>
    
     
 
